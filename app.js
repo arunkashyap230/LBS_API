@@ -3,6 +3,9 @@ const app =express();
 const userRouter=require('./api/route/user');
 const mongoose=require("mongoose");
 const bodyParser =require('body-parser');
+var cors = require('cors');
+
+app.use(cors())
 
 mongoose.connect('mongodb+srv://arunkashyap230:Iphone7500@cluster0.j9ywzjj.mongodb.net/?retryWrites=true&w=majority');
 
